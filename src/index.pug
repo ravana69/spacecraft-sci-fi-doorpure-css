@@ -1,0 +1,26 @@
+- let sides = '<div class="side"></div><div class="side"></div><div class="side"></div><div class="side"></div><div class="side"></div><div class="side"></div>';
+- let faces = '<div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div>';
+- for (var c=0; c<9; c++)
+  .cam
+.content
+  .cuboid.room !{sides}
+  .door
+    .cuboid.left
+      .side
+        span
+        span GATE <i></i>
+      - for (var s=0; s<9; s++)
+        .side
+      .cylinder !{faces}
+      .cylinder !{faces}
+    .cuboid.right
+      .side 
+        span
+      - for (var s=0; s<9; s++)
+        .side
+      .cylinder !{faces}
+  .cylinders
+    .cylinder.ground !{faces}
+    .cylinder.ceiling !{faces}
+    - for (var cyl=0; cyl<14; cyl++)
+      .cylinder !{faces}
